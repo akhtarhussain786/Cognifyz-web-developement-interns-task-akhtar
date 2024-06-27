@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="2.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar sticky-top navbar-expand-lg  navbar-light bg-light ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="Asset/cognilogo.png" alt="" width="120rem"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#overview">Overview</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Benefits">Benefits</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Qualification">Qualification</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact Us</a>
+                  </li>
+                  
+                </ul>
+                <button class="btn btn-primary ">Apply Now</button>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    
+  <main class="container" class="sec">
+    <div class="row justify-content-center align-items-center my-auto">
+        <div class="col-lg-6 col-md-6 col-sm-12 responsive-content text-center">
+            <h1 class="Top-Title text-center">Hire The New <br>Web Developers</h1>
+            <hr>
+            <p class="Top-content">We are hiring web developer interns who are passionate and ambitious in technology.</p>
+            <hr>
+            <button class="btn btn-dark p-2">Join Now - It's Free</button>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 responsive-content text-center py-1">
+          <img src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Student 1" class="slide" width="100%" height="100%" style="border-radius: 25px;">
+          <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Student 2" class="slide" width="100%" height="100%" style="border-radius: 25px;">
+          <img src="https://images.unsplash.com/photo-1520881363902-a0ff4e722963?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Student 3" class="slide" width="100%" height="100%" style="border-radius: 25px;">
+          <img src="https://images.unsplash.com/photo-1522202195465-df8a5f26fa15?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Student 4" class="slide" width="100%" height="100%" style="border-radius: 25px;">
+
+        </div>
+    </div>
+
+    <script>
+      let currentIndex = 0;
+
+const slides = document.querySelectorAll('.slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+}
+
+function startSlider() {
+    showSlide(currentIndex);
+    setInterval(nextSlide, 3000); // Change slide every 3 seconds
+}
+
+window.onload = startSlider;
+
+    </script>
+    <!-- <i class="fa-solid fa-down" style="color: #f5c000;"></i> -->
+
+</main>
+
+   <!-- New Our Services Section -->
+   <section id="services">
+    <h2>Our Services for Developers</h2>
+    <div class="service-container" id="main">
+        <div class="service" >
+            <i class="fas fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p>We provide comprehensive web development services to create robust and scalable websites.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-mobile-alt"></i>
+            <h3>Mobile Development</h3>
+            <p>Our team excels in developing mobile applications for both Android and iOS platforms.</p>
+        </div>
+        <div class="service">
+          <i class="fa-brands fa-html5"></i>
+            <h3>HTML Developers</h3>
+            <p>We offer cloud integration and services to help you scale and manage your applications efficiently.</p>
+        </div>
+
+        <div class="service" id="main02">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Services</h3>
+          <p>We offer cloud integration and services to help you scale and manage your applications efficiently.</p>
+      </div>
+
+
+      <div class="service">
+        <i class="fa-brands fa-php"></i>
+        <h3>PHP Developers</h3>
+        <p>PHP is a widely-used, open-source scripting language especially suited for web development and can be embedded into HTML. Here are the key concepts and features:.</p>
+    </div>
+
+    <div class="service">
+      <i class="fa-brands fa-laravel"></i>
+      <h3>Laravel Developers</h3>
+      <p>Laravel is a popular PHP framework that follows the MVC (Model-View-Controller) architectural pattern. It provides an elegant syntax and powerful tools for web application development.</p>
+  </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<script src="./gsap.js"></script>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

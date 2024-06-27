@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task2</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Adding a light gray background to the body */
+            font-family: Arial, sans-serif; /* Setting a common font */
+        }
+
+        .clicker1, .clicker {
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .clicker2 {
+            color: rgb(255, 255, 255);
+            background-color: rgb(243, 93, 0);
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem auto; /* Centering the calculator form */
+            width: 300px; /* Setting a fixed width for the form */
+            background-color: #fff; /* Adding a white background to the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow */
+        }
+
+        .calculator label {
+            margin-bottom: 0.5rem; /* Adding space below each label */
+            font-weight: bold; /* Making labels bold */
+        }
+
+        .calculator input[type="number"],
+        .calculator input[type="submit"] {
+            padding: 8px;
+            margin-bottom: 1rem; /* Adding space below each input */
+            border: 1px solid #ccc; /* Adding a light gray border */
+            border-radius: 5px;
+            font-size: 1rem; /* Setting font size */
+        }
+
+        .calculator input[type="submit"] {
+            background-color: rgb(0, 128, 0); /* Green background for submit button */
+            color: #fff; /* White text color */
+            cursor: pointer; /* Changing cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Adding smooth transition */
+        }
+
+        .calculator input[type="submit"]:hover {
+            background-color: rgb(0, 100, 0); /* Darker green on hover */
+        }
+
+        .Result {
+            margin-top: 20px; /* Adding space above the result */
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task2</h1>
+    
+    <center>
+        <p>The button for color changing</p>
+        <button class="clicker1">
+            Click me
+        </button>
+    </center>
+    <center>
+        <p>The button for alert with current time</p>
+        <button class="clicker2">
+            Alert me
+        </button>
+    </center>
+    <form class="calculator">
+        <label for="first_number">
+            First number
+        </label>
+        <input type="number" id="first_number">
+        <label for="second_number">
+            Second number
+        </label>
+        <input type="number" id="second_number">
+        <input type="submit" class="clicker" value="Calculate">
+    </form>
+    <div class="Result">
+        <h2>Result</h2>
+    </div>
+    <script src="task2.js"></script>
+</body>
+</html>
